@@ -1,5 +1,5 @@
 html {
-    width: 100vw;
+    width: 100%;
 }
 
 body {
@@ -35,8 +35,8 @@ nav {
 }
 
 nav>div:nth-child(2) {
-    height: 100%;
-    width: 10%;
+    height: 80%;
+    width: 20%;
     padding:.9%;
     margin:auto;
 
@@ -50,8 +50,8 @@ nav img {
 
 .msgBox{
     margin:90px auto 0px auto;
-    height:3rem;
-    width:59rem;
+    height:5rem;
+    width:70%;
     background-color: red;
     display: flex;
     justify-content: space-between;
@@ -64,7 +64,7 @@ nav img {
     justify-content:center;
     align-items: center;
     gap:0.2em;
-    height:100%;
+    height:80%;
     width:30%;
     
 }
@@ -81,6 +81,7 @@ nav img {
 
 .msgBox p{
     color: #fff !important;
+    font-family: Roboto, sans-serif;
     font-size: 14px;
     font-weight: 300;
 }
@@ -246,50 +247,7 @@ nav img {
         height:40%;
     }
 
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -297,7 +255,7 @@ nav img {
 footer {
     display: inline-block;
     background-color: rgb(50, 50, 50);
-    width: 100vw;
+    width:100%;
     height: 12rem;
     display: flex;
     justify-content: center;
@@ -313,7 +271,7 @@ footer>div {
 }
 
 footer>div>div:nth-child(1){
-    width:40%;
+    width:50%;
     height:100%;
     display: flex;
     align-items: center;
@@ -379,16 +337,68 @@ footer>div>div:nth-child(1)>span{
 
 .socialMedia{
     height:100%;
-    width:20%;
+    width:18%;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
 }
 
 .socialMedia img{
-    height:20%;
-    width:20%;
+    height:18%;
+    width:18%;
 
+}
+
+@media(max-width:1680px) and (min-width:910px){
+    .newsCard{
+        width:60%;
+    }
+    .newsCard>div:nth-child(1){
+        width:40%;
+    }
+    .newsCard>div:nth-child(2){
+        width:58%;
+    }
+}
+
+@media(max-width:650px) {
+    footer>div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    footer>div>div:nth-child(1){
+        width:100%;
+        height:40%;
+    }
+    .msgBox{
+        width:100%;
+    }
+
+    .specificNews {
+        width: 100%;
+        padding: 0px .5em 0px .5em;
+        margin:auto;
+
+    }
+
+    .specificNews>div:nth-child(1) {
+        width: 100%;
+    }
+
+    .specificNews>div:nth-child(2) {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+@media(max-width:475px){
+    footer,.msgBox,.specificNews{
+        width:30rem;
+    }
 }
 
 

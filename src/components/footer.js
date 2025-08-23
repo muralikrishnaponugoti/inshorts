@@ -5,20 +5,20 @@ function Footer(){
             <footer>
                 <div>
                    <div>
-                    <div className={styles.copyrighContainer}>
-                        <div>
-                            <img src="https://assets.inshorts.com/website_assets/images/logo_footer.png" alt='img'></img>
+                        <div className={styles.copyrighContainer}>
+                            <div>
+                                <img src="https://assets.inshorts.com/website_assets/images/logo_footer.png" alt='img'></img>
+                            </div>
+                            <span>
+                                <span>inshorts <span>Pte. Ltd.</span></span>©COPYRIGHT 2025
+                            </span>
                         </div>
-                        <span>
-                            <span>inshorts <span>Pte. Ltd.</span></span>©COPYRIGHT 2025
-                        </span>
-                    </div>
-                    <span></span>
-                    <div className={styles.contactContainer}>
-                        <span>Contact Us</span>
-                        <span>Terms & conditions</span>
-                        <span>Privacy Policies</span>
-                    </div>
+                        <span></span>
+                        <div className={styles.contactContainer}>
+                            <span>Contact Us</span>
+                            <span>Terms & conditions</span>
+                            <span>Privacy Policies</span>
+                        </div>
                    </div>
                    <div className={styles.socialMedia}>
                         <img src="https://assets.inshorts.com/website_assets/images/facebook.png" alt="fb"></img>

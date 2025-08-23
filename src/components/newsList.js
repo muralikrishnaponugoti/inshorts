@@ -6,7 +6,7 @@ function NewsList(){
     const {articles,setArticles}=useNewsContext();
     useEffect(()=>{
         if(articles.length<=0){
-            fetch('https://newsapi.org/v2/top-headlines?country=us&apiKey=5dc97cf8cdeb49d0b1152a08c8558652')
+            fetch('../../api/news')
             .then(response=>response.json())
             .then(data=>{
                 const temp=data.articles.map(article=>({...article,content:article.content?.slice(0,-13)}));

@@ -36,11 +36,9 @@ nav {
 
 nav>div:nth-child(2) {
     height: 80%;
-    width: 20%;
+    width: 12%;
     padding:.9%;
     margin:auto;
-
-
 }
 
 nav img {
@@ -232,8 +230,7 @@ nav img {
     .newsCard{
         display: column;
         width:30rem;
-        max-height: auto;
-        min-height: 37rem;
+        height:auto;
         align-items: baseline;
     }
 
@@ -245,6 +242,19 @@ nav img {
     .newsCard>div:nth-child(2){
         width:100%;
         height:40%;
+    }
+
+    nav>div:nth-child(2) {
+        width: 11rem;
+        height: 80%;
+        margin: 0px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: baseline;
+        align-items: center;
+        gap: 29%;
     }
 
 }
@@ -279,7 +289,7 @@ footer>div>div:nth-child(1){
 }
 
 footer>div>div:nth-child(1)>span{
-    height:100%;
+    height:90%;
     width:1px;
     border: 1px solid lightgray;
 }
@@ -287,10 +297,21 @@ footer>div>div:nth-child(1)>span{
 .copyrighContainer{
     width:50%;
     height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: baseline;
+    gap:.2em;
+}
+
+.copyrighContainer>div:nth-child(1){
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
 }
 
 .copyrighContainer img{
-    height:50%;
+    height:100%;
     width:100%;
 }
 
@@ -320,10 +341,12 @@ footer>div>div:nth-child(1)>span{
 }
 
 .contactContainer{
-    height:80%;
+    height:100%;
     display: flex;
     flex-direction: column;
-    justify-content: baseline;
+    justify-content:baseline;
+    gap:10%;
+    margin-top: 1em;
 }
 
 .contactContainer span{
@@ -376,6 +399,90 @@ footer>div>div:nth-child(1)>span{
     .msgBox{
         width:100%;
     }
+    .newsCard{
+        width:100%;
+    }
+    footer{
+        height:auto;
+        padding:1rem;
+    }
+    footer>div{
+        width:100%;
+        height:100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:1.5em;
+
+    }
+
+    footer>div>div:nth-child(1){
+        display: flex;
+        flex-direction:column-reverse;
+        align-items: center;
+        gap:0px;
+        width:100%;
+    }
+
+    footer>div>div:nth-child(1)>span{
+        /* width:100%; */
+        /* height:1px; */
+        height:0px;
+        width:0px;
+    }
+
+    footer>div>div:nth-child(2){
+        width:100%;
+    }
+
+    .copyrighContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        gap:0px;
+    }
+
+    .copyrighContainer>div{
+        height:15%;
+        width:50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .copyrighContainer>span{
+        display: flex;
+        flex-direction: row;
+        width:100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contactContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width:100%;
+    }
+
+    .socialMedia{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:2.5em;
+
+    }
+
+    .socialMedia img{
+        height:5%;
+        width:5%;
+    }
+
+
+
+
 
     .specificNews {
         width: 100%;
@@ -397,7 +504,7 @@ footer>div>div:nth-child(1)>span{
 
 @media(max-width:475px){
     footer,.msgBox,.specificNews{
-        width:30rem;
+        width:100vw;
     }
 }
 

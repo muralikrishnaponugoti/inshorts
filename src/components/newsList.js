@@ -22,6 +22,7 @@ function NewsList(){
         //     url=`https://newsapi.org/v2/top-headlines?country=us&apiKey=5dc97cf8cdeb49d0b1152a08c8558652`
 
         if(articles.length<=0){
+            console.log('called in articles fetch');
             fetch(url)
             .then(response=>response.json())
             .then(data=>{

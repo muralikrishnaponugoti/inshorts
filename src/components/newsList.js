@@ -27,8 +27,10 @@ function NewsList(){
             .then(data=>{
                 // console.log(data);
                 const temp=data.articles.map(article=>({...article,content:article.content?.slice(0,-13)}));
-                if(data.articles.length>0)
+                if(temp.length>0){
                     setArticles(temp);
+                    console.log(temp);
+                }
                 setTimeout(()=>{
                     setLoading(false)
                 },2000)

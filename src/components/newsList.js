@@ -15,8 +15,6 @@ function NewsList(){
     },[category])
 
     useEffect(()=>{
-        console.log('print in newsListjs',category);
-        console.log('print in newsList2 js',typeof category);
         let url=`../../api/news?category=${category}&country=us`
         // if(category && category!=='india')
         //     url=`https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=5dc97cf8cdeb49d0b1152a08c8558652`
@@ -27,12 +25,9 @@ function NewsList(){
             fetch(url)
             .then(response=>response.json())
             .then(data=>{
-                console.log(data);
-                const temp=data.articles.map(article=>({...article,content:article.content?.slice(0,-13)}));
-                console.log(temp);    
+                const temp=data.articles.map(article=>({...article,content:article.content?.slice(0,-13)}));   
                 if(temp.length>0){
                     setArticles(temp);
-                    console.log(temp);
                 }
                 setTimeout(()=>{
                     setLoading(false)

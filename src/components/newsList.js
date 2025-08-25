@@ -25,7 +25,7 @@ function NewsList(){
             fetch(url)
             .then(response=>response.json())
             .then(data=>{
-                // console.log(data);
+                console.log(data);
                 const temp=data.articles.map(article=>({...article,content:article.content?.slice(0,-13)}));
                 console.log(temp);    
                 if(temp.length>0){

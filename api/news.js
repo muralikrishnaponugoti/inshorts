@@ -3,7 +3,7 @@ export default async function handler(req, res) {
   let url=''
   if(category && category!=='india'){
     console.log('called in category',category);
-    console.log('print in newsjs',typeOf(category));
+    console.log('print in newsjs',typeof category);
     url=`https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=654765756`;
   }
   else{

@@ -1,13 +1,13 @@
 export default async function handler(req, res) {
   const {category,countary}=req.query;
   let url=''
-  if(category!==undefined &&category!=='india'){
+  if(category && category!=='india'){
     console.log('called in category',category);
-    url=`https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=5dc97cf8cdeb49d0b1152a08c8558652`;
+    url=`https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=654765756`;
   }
   else{
     console.log('called in general',category);
-    url=`https://newsapi.org/v2/top-headlines?country=us&apiKey=5dc97cf8cdeb49d0b1152a08c8558652`;
+    url=`https://newsapi.org/v2/top-headlines?country=us&apiKey=756456465`;
   }
   try {
     const response = await fetch(url);

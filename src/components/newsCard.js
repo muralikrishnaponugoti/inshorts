@@ -1,5 +1,4 @@
 import styles from '../componentStyles/pageStyles.module.css';
-import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 function NewsCard({article,id}){
     const navigate=useNavigate();

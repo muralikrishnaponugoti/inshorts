@@ -8,6 +8,7 @@ function App() {
       children:[
         {index:true,element:<NewsList/>},
         {path:'specific/:articleId',element:<Specific/>},
+        {path:'/category/:category',element:<NewsList/>}
         
       ]
     }

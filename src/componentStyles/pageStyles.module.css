@@ -34,6 +34,118 @@ nav {
     height:30%;
 }
 
+.menuList{
+    transition: width 2s ease-in-out;
+    width:216px;
+    height:100vh;
+    position: fixed;
+    top:0%;
+    left:0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    padding:.5%;
+    gap:1em;
+    background: #303036;
+    z-index: 50;
+}
+
+.menuList h2{
+    position: absolute;
+    top:8px;
+    right:-2rem;
+}
+
+.menuList{
+    display: none; 
+
+}
+
+
+
+.lngCngContainer{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:1em;
+    height:5rem;
+    border-bottom: 1px solid #808290;
+}
+
+
+
+.lngCngContainer>span{
+    border: 1px solid #808290;
+    border-radius: 4px;
+    width:90%;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+}
+
+.lngCngContainer>span span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    width:49.9%;
+    padding:.5em 1em .5em 1em;  
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color:white;
+}
+
+.lngCngContainer>span span:nth-child(1){
+    border-right:1px solid #808290 ;
+}
+
+
+.lngCngContainer hr{
+    height:100%;
+    width:1px;
+}
+
+.categoriesContainer{
+    width:100%;
+    height:auto;
+}
+
+.categoriesContainer p{
+    color: #808290;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 0px;
+}
+
+.categoriesContainer ul{
+    width:100%;
+    height:100%;
+    list-style: none;
+    padding:0px;
+}
+
+.categoriesContainer ul a{
+    display: block;
+    text-decoration: none;
+    width:100%;
+    height:2.7.5em;
+    font-family: Roboto, sans-serif;
+    font-size: 13px;
+    font-weight: 100;
+    padding: 12px 0 12px 40px;
+    color:#fff;
+}
+
+.categoriesContainer ul a:hover{
+    background: rgb(128, 130, 144);
+    color: rgb(255, 255, 255);
+}
+
+
+
 nav>div:nth-child(2) {
     height: 80%;
     width: 12%;
@@ -479,10 +591,6 @@ footer>div>div:nth-child(1)>span{
         height:5%;
         width:5%;
     }
-
-
-
-
 
     .specificNews {
         width: 100%;

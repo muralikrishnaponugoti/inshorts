@@ -22,12 +22,12 @@ function NewsList(){
         //     url=`https://newsapi.org/v2/top-headlines?country=us&apiKey=5dc97cf8cdeb49d0b1152a08c8558652`
 
         if(articles.length<=0){
-            console.log('called in articles fetch');
             fetch(url)
             .then(response=>response.json())
             .then(data=>{
                 // console.log(data);
                 const temp=data.articles.map(article=>({...article,content:article.content?.slice(0,-13)}));
+                console.log(temp);    
                 if(temp.length>0){
                     setArticles(temp);
                     console.log(temp);

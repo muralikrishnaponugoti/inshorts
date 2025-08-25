@@ -1,7 +1,8 @@
 export default async function handler(req, res) {
-  const {category,countary}=req.query;
+  let {category,countary}=req.query;
   let url=''
-  if(category && category!=='india'){
+  category=category.trim();
+  if(category!=='undefined' && category!=='india'){
     console.log('called in category',category);
     console.log('print in newsjs',typeof category);
     url=`https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=654765756`;

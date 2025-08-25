@@ -16,7 +16,7 @@ function NewsList(){
 
     useEffect(()=>{
         console.log('print in newsListjs',category);
-        console.log('print in newsList2 js',typeOf(category));
+        console.log('print in newsList2 js',typeof category);
         let url=`../../api/news?category=${category}&country=us`
         // if(category && category!=='india')
         //     url=`https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=5dc97cf8cdeb49d0b1152a08c8558652`
